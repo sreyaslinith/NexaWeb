@@ -1,0 +1,133 @@
+body { 
+    margin: 0; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background-color: #120d1a; 
+    color: #e4d2f8; 
+    transition: background-color 1s ease; 
+}
+
+body.light-mode { 
+    background-color: #f2f2f2; color: #120d1a; 
+}
+
+.naviform {
+    background-color: #634580; 
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    padding: 1rem; 
+    }
+
+.naviform ul { 
+    list-style: none; 
+    display: flex;
+     justify-content: space-around;
+      padding: 0; 
+      margin: 0;
+ }
+
+.naviform a, .naviform button
+ { color: #fff; text-decoration: none;
+     font-weight: bold;
+      background: none;
+       border: none; 
+       cursor: pointer; }
+
+.section {
+     padding: 100px 20px;
+      text-align: center;
+       animation: fadeIn 2s ease-in-out;
+     }
+
+.home img {
+     max-width: 200px; 
+     animation: bounce 3s infinite; 
+    }
+
+.domain-grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    padding: 2rem; }
+
+.domain-box { 
+    background-color: #2e1845; border-radius: 15px; 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    animation: slideUp 1.5s ease-in-out; 
+}
+
+.domain-box img { 
+    width: 100%; height: 150px; 
+    object-fit: cover;
+     border-radius: 10px;
+     }
+
+.domain-box a { 
+    display: block; font-size: 1.2rem; color: #9c7ae3; 
+    margin: 10px 0; 
+    text-decoration: none;
+     font-weight: bold;
+     }
+
+.domain-box p {
+     font-size: 0.95rem; 
+     color: #ccc; 
+    }
+
+.domain-box:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.form form { 
+    display: flex;
+     flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    max-width: 500px; 
+    margin: 0 auto; }
+
+.form input, .form textarea, .form select, .form button {
+     width: 100%; 
+     padding: 10px;
+      border: none; 
+      border-radius: 5px; 
+      font-size: 1rem; 
+    }
+
+.form button {
+     background-color: #824de0;
+      color: #fff;
+       font-weight: bold; 
+       cursor: pointer; 
+       transition: background-color 0.3s ease;
+     }
+
+.form button:hover { 
+    background-color: #a77fe8; 
+}
+.footer {
+     text-align: center; 
+     padding: 20px; 
+     background-color: #1a082b; 
+     color: #ccc;
+    }
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); } 
+    100% { opacity: 1; transform: translateY(0); } 
+}
+
+@keyframes bounce { 
+    0%,
+    100% { transform: translateY(0); } 
+    50% { transform: translateY(-15px); } 
+}
+
+@keyframes slideUp { 
+    from { transform: translateY(30px); 
+        opacity: 0; } to
+        { transform: translateY(0); opacity: 1; } }
+
