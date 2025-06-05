@@ -1,107 +1,115 @@
-<html>
+<!DOCTYPE html>
 
 <head>
-    <title>Sreyas</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXAweb SolNs</title>
+  <link rel="stylesheet" href="style1.css" />
 </head>
 
 <body>
-    <div class="naviform">
-        <ul>
-            <a href="#home">
-                <li>Home</li>
-            </a>
-            <a href="#menu">
-                <li>Menu</li>
-            </a>
-            <a href="#form">
-                <li>Form</li>
-            </a>
-            <a href="calc.html">
-                <li>Calculator</li>
-        </ul>
+  <div class="naviform">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#form">Form</a></li>
+      <li><a href="calc.html">Calculator</a></li>
+    </ul>
+  </div>
+  <section class="section home" id="home">
+    <h1>WELCOME TO NEXAweb SolNs</h1>
+    <img src="bgrem.png" alt="Logo" />
+    <h2>Hi There!</h2>
+    <h3>I'm Sreyas Linith</h3>
+    <h5>The founder of NEXAweb</h5>
+    <p>
+      Welcome to our website of development domains—where ideas transform into digital reality!
+      We specialize in creating responsive, user-friendly, and performance-optimized websites tailored to your business
+      goals.
+      Whether you're launching a new brand or upgrading your existing site, our team delivers customized solutions using
+      the latest technologies.
+    </p>
+  </section>
+  <section class="section menu" id="menu">
+    <h3>List of Domains</h3>
+    <div class="domain-grid">
+      <div class="domain-box">
+        <img src="web.jpg" alt="Cyber Security" />
+        <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html">Cyber Security</a>
+        <p>Learn how to protect systems and data from cyber threats through ethical hacking, cryptography, and network
+          security practices.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="AI and Data Science" />
+        <a href="https://www.coursera.org/articles/ai-in-data-science">AI and Data Science</a>
+        <p>Explore the intersection of artificial intelligence and data science, including data analysis, machine
+          learning, and deep learning.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="AutoCAD" />
+        <a href="https://www.autodesk.com/in/products/autocad/overview">AutoCAD</a>
+        <p>Master the tools of 2D and 3D drafting with AutoCAD, widely used in architecture, engineering, and design
+          industries.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="Web Development" />
+        <a href="https://www.ni.com/en/shop/software-portfolio.html">Web Development</a>
+        <p>Learn to build websites and applications using HTML, CSS, JavaScript, and modern frameworks like React and
+          Angular.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="Robotics" />
+        <a href="https://iaac.net/masters/master-in-robotics-and-advanced-construction/">Robotics</a>
+        <p>Delve into the world of intelligent machines, automation, and robotics systems through hands-on learning and
+          simulation.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="Game Development" />
+        <a href="https://unity.com/">Game Development</a>
+        <p>Design and build interactive games using engines like Unity and Unreal, focusing on gameplay mechanics and
+          graphics.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="Machine Learning" />
+        <a href="https://www.tensorflow.org/">Machine Learning</a>
+        <p>Understand the concepts behind machine learning models, neural networks, and practical applications using
+          TensorFlow.</p>
+      </div>
+      <div class="domain-box">
+        <img src="web.jpg" alt="React Development" />
+        <a href="https://react.dev/">React Development</a>
+        <p>Learn to create dynamic and responsive web interfaces using React, a popular JavaScript library for front-end
+          development.</p>
+      </div>
     </div>
+  </section>
+  <section class="section form" id="form">
+    <h3>Fill Your Details</h3>
+    <form>
+      <label for="name">Enter your Name:</label>
+      <input id="name" name="name" required /><label for="email">Enter your Email:</label>
+      <input id="email" name="email" type="email" required />
 
-        <div class="home" id="home">
-            <div class="grp">
-                <h1 class="top">WELCOME TO NEXAweb SolNs</h1>
-                <img height="200" src="bgrem.png" />
-                <h2 class="top2">Hai! There</h2>
-                <h3 class="top3">I'm Sreyas Linith</h3>
-                <h5 class="top3">The founder of NEXAweb</h5>
-            <p>Welcome to our website of development domains-where ideas transform into digital reality! we specialize
-                in
-                creating responsive,user-friendly and perfomance-optimized website tailored to your business
-                goals.Wheather
-                you're launching a new brand or upgrading your existing site our team delivers costomized solutions
-                using
-                latest technologies
-                1. Friendly & Professional
+      <label for="semester">Enter your Semester:</label>
+      <input id="semester" name="semester" required />
 
-Welcome to Our Web Development Hub . Where Your Vision Meets Innovation!
-We build beautiful, responsive, and high-performance websites designed with your business in mind. Whether you’re starting fresh or revamping an existing site, we bring your ideas to life using the latest technologies and best practices. Let’s create something great together.
-2. Modern & Bold
+      <label for="about">Tell us about you:</label>
+      <textarea id="about" name="about"></textarea>
 
-Build Smarter. Launch Faster. Grow Bigger.
-Welcome to your one-stop solution for web development that delivers. From sleek, responsive designs to powerful performance optimizations, we craft websites that not only look good—but work hard for your business. Ready to level up your digital presence? Let's get started.
-3. Technical & Trust-Building
+      <label for="domain">Select your Domain:</label>
+      <select id="domain" name="domain">
+        <option>Cyber Security</option>
+        <option>AI and Data Science</option>
+        <option>AutoCAD</option>
+        <option>Web Development</option>
+        <option>Robotics</option>
+        <option>Game Development</option>
+        <option>Machine Learning</option>
+        <option>React Development</option>
+      </select>
 
-Empowering Businesses Through Cutting-Edge Web Solutions
-We specialize in developing scalable, secure, and performance-driven websites. With a focus on responsive design and optimized functionality, we align every project with your business goals. Using the latest web technologies, we ensure your site stays ahead in a competitive digital world.
-
-...:)</p>
-        </div>
-    </div>
-    <div class="menu" id="menu">
-        <button>MENU</button>
-        <div class="grp2">
-            <h3>LIST OF DOMAIN</h3>
-            <ol>
-                <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html">
-                    <li>Cyber Security</li>
-                </a>
-                <a href="https://www.coursera.org/articles/ai-in-data-science">
-                    <li>AI and Datascience</li>
-                </a>
-                <a
-                    href="https://www.autodesk.com/in/products/autocad/overview?mktvar002=5146914|SEM|21249115390|165181856284|kwd-297275808151&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_ACAD_AutoCAD_APAC_IN_eComm_SEM_BR_NA_EX_0000_5146914&utm_id=5146914&utm_term=kwd-297275808151&term=1-YEAR&tab=subscription&plc=ACDIST&gad_source=1&gad_campaignid=21249115390&gclid=EAIaIQobChMIhZOd7cPUjQMVVhODAx16VzNgEAAYASAAEgLiQfD_BwE">
-                    <li>Autocad</li>
-                    <a />
-                    <a
-                        href="https://www.ni.com/en/shop/software-portfolio.html?cid=PSEA-701VU00000DbXTpYAN-CONS-GOGSE_162334870940&utm_keyword=g%20web%20development&s_kwcid=AL!6304!3!697555965505!b!!g!!g%20web%20development&gad_source=1&gad_campaignid=21230555407&gclid=EAIaIQobChMIyJ-dmsTUjQMV26VmAh2SjyMnEAAYASAAEgJNVfD_BwE">
-                        <li>Web development</li>
-                        <a />
-                        <a
-                            href="https://iaac.net/masters/master-in-robotics-and-advanced-construction/?utm_source=google&utm_medium=cpc&utm_campaign=MRAC_S_Ongoing_NonEU_EN&gad_source=1&gad_campaignid=19748961260&gclid=EAIaIQobChMI45jSuMTUjQMVDqNmAh0bKCvtEAAYASAAEgKPg_D_BwE">
-                            <li>Robotics</li>
-                            <a />
-            </ol>
-        </div>
-    </div>
-    <div class="form" id="form">
-        <h3>Fill your details</h3>
-        <form>
-            <label>Enter your Name:-</label>
-            <input />
-            </br>
-            <label>Enter your Email:-:-</label>
-            <input />
-            </br>
-            <label>Enter your Semester:-</label>
-            <input />
-            </br>
-            <label>Tell us abt you:-</label>
-            <textarea></textarea>
-            </br>
-            <label>Select your Domain:-</label>
-            <select>
-                <option>Cyber Security</option>
-                <option>AI and Datascience</option>
-                <option>Autocad</option>
-                <option>Web Development</option>
-                <option>Robotics</option>
-            </select>
-        </form>
-    </div>
+      <button type="submit">Submit</button>
+    </form>
 </body>
+
 </html>
