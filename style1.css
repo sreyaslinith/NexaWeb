@@ -4,6 +4,9 @@ body {
     background-color: #120d1a;
     color: #e4d2f8;
     transition: background-color 1s ease;
+span {
+color: #a913d6; 
+}
 }
 
 body.light-mode {
@@ -38,7 +41,7 @@ body.light-mode {
     cursor: pointer;
 }
 
-.section {
+.section{
     padding: 100px 20px;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
